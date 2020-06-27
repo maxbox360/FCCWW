@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pkf-an-qwi">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Main View" customClass="ViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WFG-Xc-BH5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDo-1h-rVM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO8-76-lB0">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="CONNECT" backgroundImage="cross_small">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="connectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwk-8u-bmq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGk-eq-Vi0">
+                                        <rect key="frame" x="0.0" y="184" width="414" height="184"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwr-wA-LT3">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="184"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="GIVING" backgroundImage="giving">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="givingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xo8-Hd-kkj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="outreachButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyI-Qj-opg">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="184"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="OUTREACH" backgroundImage="community">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="outreachButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdB-g6-eCQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vyI-Qj-opg" firstAttribute="width" secondItem="iwr-wA-LT3" secondAttribute="width" id="Fyo-4J-8MN"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdn-4e-6JD">
+                                        <rect key="frame" x="0.0" y="368" width="414" height="184"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="AJ5-Ri-dFS">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="184"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="PRAYER REQUESTS" backgroundImage="prayer_request">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="prayerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FqB-5P-6Ex"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v53-6d-VS8">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="184"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="EVENTS" backgroundImage="events">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="eventsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aey-jg-1YU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="v53-6d-VS8" firstAttribute="width" secondItem="AJ5-Ri-dFS" secondAttribute="width" id="yO3-0s-P8I"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tz0-IB-jHs">
+                                        <rect key="frame" x="0.0" y="552" width="414" height="184"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-nM-wVG">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="184"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="BULLETIN" backgroundImage="bulletin-board">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="bulletinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZZ-RG-PAX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2P-Ho-1P4">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="184"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <state key="normal" title="PODCAST" backgroundImage="podcast">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="podcastButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdV-wR-ftP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="e2P-Ho-1P4" firstAttribute="width" secondItem="0Dh-nM-wVG" secondAttribute="width" id="Ipa-6z-CqV"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tz0-IB-jHs" firstAttribute="height" secondItem="mDo-1h-rVM" secondAttribute="height" id="1yW-00-VLb"/>
+                                    <constraint firstItem="jdn-4e-6JD" firstAttribute="width" secondItem="mDo-1h-rVM" secondAttribute="width" id="S1g-ag-Tlh"/>
+                                    <constraint firstItem="BGk-eq-Vi0" firstAttribute="height" secondItem="mDo-1h-rVM" secondAttribute="height" id="SR1-AI-Fy5"/>
+                                    <constraint firstItem="jdn-4e-6JD" firstAttribute="height" secondItem="mDo-1h-rVM" secondAttribute="height" id="Tj5-6a-rqJ"/>
+                                    <constraint firstItem="Tz0-IB-jHs" firstAttribute="width" secondItem="mDo-1h-rVM" secondAttribute="width" id="lrn-IL-msv"/>
+                                    <constraint firstItem="BGk-eq-Vi0" firstAttribute="width" secondItem="mDo-1h-rVM" secondAttribute="width" id="poa-I3-Equ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WFG-Xc-BH5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EZY-HF-5vj"/>
+                            <constraint firstAttribute="trailing" secondItem="WFG-Xc-BH5" secondAttribute="trailing" id="Fwf-YX-JMW"/>
+                            <constraint firstAttribute="bottom" secondItem="WFG-Xc-BH5" secondAttribute="bottom" id="G57-W9-CKp"/>
+                            <constraint firstItem="WFG-Xc-BH5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vRf-ac-Bo9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="csJ-Jt-x5E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1361" y="147"/>
+        </scene>
+        <!--Connect-->
+        <scene sceneID="VRJ-5V-TMx">
+            <objects>
+                <viewController storyboardIdentifier="connectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c3l-yt-uOb" userLabel="Connect" customClass="ConnectViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edY-Nk-1xQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wl5-8Y-d8g">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZz-bN-w83">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="CONTACT US">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactUsButton:" destination="c3l-yt-uOb" eventType="touchUpInside" id="rXz-j1-nIP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iup-Yv-84M">
+                                        <rect key="frame" x="0.0" y="184" width="414" height="184"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="LOCATE US">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="locateUsButton:" destination="c3l-yt-uOb" eventType="touchUpInside" id="5Ts-EZ-Pax"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etr-uP-WAa">
+                                        <rect key="frame" x="0.0" y="368" width="414" height="184"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="FACEBOOK">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookButton:" destination="c3l-yt-uOb" eventType="touchUpInside" id="RRR-Oo-t9Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPV-lz-l0a">
+                                        <rect key="frame" x="0.0" y="552" width="414" height="184"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="INSTAGRAM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="instagramButton:" destination="c3l-yt-uOb" eventType="touchUpInside" id="mip-yV-oxQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Iup-Yv-84M" firstAttribute="width" secondItem="UZz-bN-w83" secondAttribute="width" id="GCV-Xw-5Mg"/>
+                                    <constraint firstItem="Iup-Yv-84M" firstAttribute="height" secondItem="UZz-bN-w83" secondAttribute="height" id="PBt-y3-SMQ"/>
+                                    <constraint firstItem="etr-uP-WAa" firstAttribute="height" secondItem="UZz-bN-w83" secondAttribute="height" id="X5b-MV-TL8"/>
+                                    <constraint firstItem="mPV-lz-l0a" firstAttribute="height" secondItem="UZz-bN-w83" secondAttribute="height" id="cIG-dH-24e"/>
+                                    <constraint firstItem="etr-uP-WAa" firstAttribute="width" secondItem="UZz-bN-w83" secondAttribute="width" id="ccw-TA-NNL"/>
+                                    <constraint firstItem="mPV-lz-l0a" firstAttribute="width" secondItem="UZz-bN-w83" secondAttribute="width" id="tCD-pS-Vrz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wl5-8Y-d8g" firstAttribute="top" secondItem="taY-mo-a97" secondAttribute="top" id="AvS-yL-h3e"/>
+                            <constraint firstItem="taY-mo-a97" firstAttribute="bottom" secondItem="wl5-8Y-d8g" secondAttribute="bottom" id="Bqf-GV-deS"/>
+                            <constraint firstItem="taY-mo-a97" firstAttribute="trailing" secondItem="wl5-8Y-d8g" secondAttribute="trailing" id="P78-8f-dwI"/>
+                            <constraint firstItem="wl5-8Y-d8g" firstAttribute="leading" secondItem="taY-mo-a97" secondAttribute="leading" id="gE6-wW-2VV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="taY-mo-a97"/>
+                    </view>
+                    <connections>
+                        <outlet property="instagramButton" destination="mPV-lz-l0a" id="vAE-Ej-DbG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10V-M9-fW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2075" y="-904"/>
+        </scene>
+        <!--Outreach-->
+        <scene sceneID="eUd-8S-DSA">
+            <objects>
+                <viewController storyboardIdentifier="outreachViewController" title="outreachViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qtE-yh-gMj" userLabel="Outreach" customClass="OutreachViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E0M-lf-hg1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outreach View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAN-a6-WfE">
+                                <rect key="frame" x="110.66666666666669" y="357.66666666666669" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BAN-a6-WfE" firstAttribute="centerY" secondItem="E0M-lf-hg1" secondAttribute="centerY" id="LlS-Sx-C3K"/>
+                            <constraint firstItem="BAN-a6-WfE" firstAttribute="centerX" secondItem="E0M-lf-hg1" secondAttribute="centerX" id="coW-wG-Ixf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qC1-av-fAx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4rS-5J-5s5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gtp-Ru-htE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="-231"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LOc-Jy-2aa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pkf-an-qwi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ykv-7j-G5H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pTC-9u-BQF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysj-yZ-Ca5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="147"/>
+        </scene>
+        <!--Bulletin-->
+        <scene sceneID="vwx-2a-yWF">
+            <objects>
+                <viewController storyboardIdentifier="bulletinViewController" id="Nbu-H5-eZa" userLabel="Bulletin" customClass="BulletinViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FgZ-rs-VGm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bulletin View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyG-eP-JS7" userLabel="Bulletin View Controller">
+                                <rect key="frame" x="118" y="357.66666666666669" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YyG-eP-JS7" firstAttribute="centerY" secondItem="FgZ-rs-VGm" secondAttribute="centerY" id="PD3-fy-T8j"/>
+                            <constraint firstItem="YyG-eP-JS7" firstAttribute="centerX" secondItem="FgZ-rs-VGm" secondAttribute="centerX" id="PT5-6p-bxq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lSG-0M-xSt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKX-nt-W9e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="1182"/>
+        </scene>
+        <!--Podcast-->
+        <scene sceneID="uQy-f5-XWl">
+            <objects>
+                <viewController storyboardIdentifier="podcastViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q5W-qP-MXX" userLabel="Podcast" customClass="PodcastViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gxn-Dj-Yyh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcast View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptW-oX-r8f">
+                                <rect key="frame" x="115" y="357.66666666666669" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ptW-oX-r8f" firstAttribute="centerY" secondItem="gxn-Dj-Yyh" secondAttribute="centerY" id="2Ih-Tb-KQJ"/>
+                            <constraint firstItem="ptW-oX-r8f" firstAttribute="centerX" secondItem="gxn-Dj-Yyh" secondAttribute="centerX" id="a4l-BM-8IK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PWN-1e-kuY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51f-6s-4MC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430" y="1182"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="hn9-DA-zfG">
+            <objects>
+                <viewController storyboardIdentifier="eventsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NrA-rX-YeS" userLabel="Events" customClass="EventsViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="suA-yG-pIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBC-q4-TCh">
+                                <rect key="frame" x="120.66666666666669" y="357.66666666666669" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WBC-q4-TCh" firstAttribute="centerX" secondItem="suA-yG-pIi" secondAttribute="centerX" id="9G9-p3-AHy"/>
+                            <constraint firstItem="WBC-q4-TCh" firstAttribute="centerY" secondItem="suA-yG-pIi" secondAttribute="centerY" id="RnQ-AC-hX9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oBa-W2-xWj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQJ-Oi-d8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="468"/>
+        </scene>
+        <!--Contact Us-->
+        <scene sceneID="MHJ-qw-GfL">
+            <objects>
+                <viewController storyboardIdentifier="contactUsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gKS-UH-M1K" userLabel="Contact Us" customClass="ContactUsViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KTG-jN-Ro8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="church secretary email: shar@fccww.org" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byE-i7-9cg">
+                                <rect key="frame" x="52" y="126" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" church office phone: (479) 273 - 2596" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g0-TG-GCV">
+                                <rect key="frame" x="56.666666666666657" y="229" width="301" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7g0-TG-GCV" firstAttribute="centerX" secondItem="KTG-jN-Ro8" secondAttribute="centerX" id="QPM-78-Ofm"/>
+                            <constraint firstItem="byE-i7-9cg" firstAttribute="centerX" secondItem="KTG-jN-Ro8" secondAttribute="centerX" id="VMr-yH-IP9"/>
+                            <constraint firstItem="byE-i7-9cg" firstAttribute="top" secondItem="1XP-z3-nyV" secondAttribute="top" constant="126" id="bEU-YH-fMW"/>
+                            <constraint firstItem="7g0-TG-GCV" firstAttribute="top" secondItem="byE-i7-9cg" secondAttribute="bottom" constant="82" id="cwh-tS-KfR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1XP-z3-nyV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAg-nk-l4v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2835" y="-904"/>
+        </scene>
+        <!--Locate Us-->
+        <scene sceneID="UWc-qj-3pB">
+            <objects>
+                <viewController storyboardIdentifier="locateUsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NUF-lp-yuL" userLabel="Locate Us" customClass="LocateUsViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CO9-eQ-k1r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DdM-fT-9lO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rzZ-A9-XZ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="fcc" translatesAutoresizingMaskIntoConstraints="NO" id="cmR-u8-POd">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="297.66666666666669"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 am Traditional Worship @ FCC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGB-KI-gIf">
+                                                <rect key="frame" x="0.0" y="297.66666666666669" width="414" height="20.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FCC is located at 807 SE 14th St. in Bentonville" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jib-YI-q92">
+                                                <rect key="frame" x="0.0" y="318" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jib-YI-q92" secondAttribute="height" multiplier="207:25" id="8tb-Fj-6dM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BfW-y4-iFH">
+                                        <rect key="frame" x="0.0" y="368" width="414" height="368"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ww" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-pV-TRe">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="268"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkY-x1-SqH">
+                                                <rect key="frame" x="0.0" y="268" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="a7w-T9-GRs"/>
+                                                </constraints>
+                                                <string key="text">9:30am Coffeehouse Worship @ WaterWay
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WaterWay is located at 4074 SW H St. in Bentonville" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZV5-wd-UQZ">
+                                                <rect key="frame" x="0.0" y="318" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="tGi-OW-7Ru"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BfW-y4-iFH" firstAttribute="height" secondItem="rzZ-A9-XZ7" secondAttribute="height" id="uzn-GJ-Qow"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bIs-tl-fM9" firstAttribute="trailing" secondItem="DdM-fT-9lO" secondAttribute="trailing" id="72m-P1-eR8"/>
+                            <constraint firstItem="DdM-fT-9lO" firstAttribute="leading" secondItem="bIs-tl-fM9" secondAttribute="leading" id="LZk-uU-xyg"/>
+                            <constraint firstItem="DdM-fT-9lO" firstAttribute="top" secondItem="bIs-tl-fM9" secondAttribute="top" id="cbS-4V-ktD"/>
+                            <constraint firstItem="bIs-tl-fM9" firstAttribute="bottom" secondItem="DdM-fT-9lO" secondAttribute="bottom" id="lO1-Vo-mA2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bIs-tl-fM9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jer-hn-DLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3525" y="-904"/>
+        </scene>
+        <!--Facebook-->
+        <scene sceneID="Mjl-FM-SGV">
+            <objects>
+                <viewController storyboardIdentifier="facebookViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OKv-bM-fFd" userLabel="Facebook" customClass="FacebookViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2zc-YO-P69">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8Lp-S4-flO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88K-0k-GlX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4178" y="-904"/>
+        </scene>
+        <!--Instagram-->
+        <scene sceneID="n2b-ys-w9M">
+            <objects>
+                <viewController storyboardIdentifier="instagramViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jqQ-q9-kbc" userLabel="Instagram" customClass="InstagramViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9M2-2c-4SC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MSg-GQ-Jt4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7L-qK-CxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4826" y="-904"/>
+        </scene>
+        <!--Prayer Request-->
+        <scene sceneID="bcP-nh-mhT">
+            <objects>
+                <viewController storyboardIdentifier="prayerRequestViewController" title="outreachViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UIb-7e-Amw" userLabel="Prayer Request" customClass="PrayerRequestViewController" customModule="FCCWW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uyf-aE-tRT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prayer Request View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grY-Xt-g6Z">
+                                <rect key="frame" x="88" y="357.66666666666669" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="grY-Xt-g6Z" firstAttribute="centerY" secondItem="uyf-aE-tRT" secondAttribute="centerY" id="HtF-a0-c1r"/>
+                            <constraint firstItem="grY-Xt-g6Z" firstAttribute="centerX" secondItem="uyf-aE-tRT" secondAttribute="centerX" id="ZUc-n9-DwI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XAx-h8-juy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HQc-8f-YBc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQM-KR-ajT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3059" y="-231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bulletin-board" width="426.66665649414062" height="284.33334350585938"/>
+        <image name="community" width="213.33332824707031" height="172.66667175292969"/>
+        <image name="cross_small" width="213.33332824707031" height="142"/>
+        <image name="events" width="213.33332824707031" height="160"/>
+        <image name="fcc" width="203.66667175292969" height="152.66667175292969"/>
+        <image name="giving" width="213.33332824707031" height="142"/>
+        <image name="podcast" width="213.33332824707031" height="142"/>
+        <image name="prayer_request" width="213.33332824707031" height="142"/>
+        <image name="ww" width="285.66665649414062" height="214.33332824707031"/>
+    </resources>
+</document>
